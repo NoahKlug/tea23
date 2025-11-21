@@ -10,7 +10,16 @@ int main(int argc, char **argv) {
      * it is much more convenient than std::cout and printf
      * More info at https://fmt.dev/latest/api.html
      */
-    fmt::print("Hello, {}!\n", tea::PROJECT_NAME);
+    
+     fmt::print("Hello, {} bli bls blub!\n", tea::PROJECT_NAME);
+
+     int y = 5;
+
+     fmt::println(y);
+
+     changeValuebyParameter(y);                        // Speicher wieder freigeben
+
+     fmt::println(y);
 
     /* INSERT YOUR CODE HERE */
 

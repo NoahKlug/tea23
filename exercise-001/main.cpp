@@ -3,7 +3,10 @@
 
 #include "config.h"
 
-int main(int argc, char **argv) {
+int globalVar = 1;
+
+
+int main(int argc, char **argv,int globalVar) {
 
     /**
      * The {fmt} lib is a cross platform library for printing and formatting text
@@ -11,6 +14,7 @@ int main(int argc, char **argv) {
      * More info at https://fmt.dev/latest/api.html
      */
     fmt::print("Hello, {}!\n", tea::PROJECT_NAME);
+    fmt::print(globalVar)
 
     /* INSERT YOUR CODE HERE */
 

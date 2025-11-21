@@ -1,6 +1,12 @@
 #include <fmt/chrono.h>
 #include <fmt/format.h>
 
+state_garagentor_offen = 0;
+state_fahre_runter = 1;
+state_garage_zu = 2;
+state_fahre_hoch = 3;
+state_stop = 4;
+
 auto main(int argc, char** argv) -> int
 {
     /**
